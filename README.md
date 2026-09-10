@@ -35,3 +35,30 @@ pip install -r requirements.txt
 
 # Run FastAPI server
 python -m uvicorn backend.app.main:app --reload --port 8000
+
+
+
+2. Frontend Setup
+Bash
+# Navigate to frontend directory
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start Vite development server
+npm run dev
+
+📄 License
+Developed for Smart India Hackathon (SIH) 2026.
+
+
+---
+
+### Step-by-Step Commands to Push `README.md` to GitHub
+
+After saving the file, run these commands in your terminal:
+
+1. **Stage the new file:**
+   ```bash
+   git add README.md
