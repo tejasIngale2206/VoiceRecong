@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+websockets
+torch
+torchaudio
+librosa
+numpy
+sounddevice
+python-dotenv
