@@ -23,31 +23,24 @@ VoiceShield is an advanced forensic audio inspection system designed to detect A
 
 ---
 
-## 🚀 Quickstart Guide
+## 🚀 How to Run locally
 
-### 1. Backend Setup
+### 1. Start Backend Server (FastAPI)
+Open a terminal in the root directory (`VoiceRecong`) and run:
 ```bash
-# Navigate to backend directory
-cd backend
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run FastAPI server
 python -m uvicorn backend.app.main:app --reload --port 8000
 
+Backend API will run at: http://localhost:8000
 
+2. Start Frontend Server (React / Vite)
+Open a second terminal window, navigate to the frontend folder, and run:
 
-2. Frontend Setup
 Bash
-# Navigate to frontend directory
 cd frontend
-
-# Install dependencies
 npm install
-
-# Start Vite development server
 npm run dev
+Frontend UI will run at: http://localhost:5173 (or port assigned by Vite)
+
 
 📄 License
 Developed for Smart India Hackathon (SIH) 2026.
@@ -55,10 +48,11 @@ Developed for Smart India Hackathon (SIH) 2026.
 
 ---
 
-### Step-by-Step Commands to Push `README.md` to GitHub
+### Step 2: Push `README.md` to GitHub
 
-After saving the file, run these commands in your terminal:
+After saving the file, run these terminal commands:
 
-1. **Stage the new file:**
-   ```bash
-   git add README.md
+```bash
+git add README.md
+git commit -m "docs: add exact local execution commands to README"
+git push origin main
